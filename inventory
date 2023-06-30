@@ -1,0 +1,7 @@
+[proxmox]
+ipforproxmoxserver
+
+[proxmox:vars]
+ansible_user=root
+ansible_ssh_password=pleasedonthackme # Only needed if you don't have key based auth
+ansible_ssh_common_args='-o StrictHostKeyChecking=no' # Only needed if you don't have key based auth

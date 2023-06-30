@@ -1,0 +1,16 @@
+# Configuration file for the main plabook, make sure to also configure the inventory file!
+
+# Proxmox credentials
+proxmox_ip: ipforproxmoxserver
+proxmox_node: proxmoxnode
+proxmox_user: root@pam # If you have a different username don't forget to include the @pam
+proxmox_password: pleasedonthackme
+
+# VM configuration
+vm_template: ubuntu-2204-template
+vm_name: superawesomevm
+storage: local
+format: qcow2
+
+# General
+vm_timeout: 500

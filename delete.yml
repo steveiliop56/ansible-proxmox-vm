@@ -1,0 +1,17 @@
+- name: Proxmox vm creation playbook.
+  hosts: proxmox
+  tasks:
+
+    - include_vars: vars.yml
+
+    - name: Delete the vm.
+      proxmox_kvm:
+        api_user: "{{ proxmox_user }}"
+        api_password: "{{ proxmox_password }}"
+        api_host: "{{ proxmox_ip }}"
+        name: "{{ vm_name }}"
+        node: "{{ proxmox_node }}"
+        state: absent
+
+    - debug: 
+        msg: "The vm {{ vm_name }} was deleted!"
