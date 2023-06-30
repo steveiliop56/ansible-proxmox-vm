@@ -1,4 +1,4 @@
-# ansible-proxmox-vmcreation
+# ansible-proxmox-vm
 Some simple ansible playbooks for creating, starting, stopping, deleting proxmox virtual machines...
 
 ### Installing
